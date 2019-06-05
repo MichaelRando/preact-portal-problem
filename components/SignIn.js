@@ -24,6 +24,7 @@ const SignIn = ModalDialog => class extends React.Component {
       <ModalDialog
         style={style}
         onCloseClick={this.onCloseClick}
+        show={this.props.show}
       >
         <div className='view view-sign-in'>
           <h3 className='view-header-style-modal'>

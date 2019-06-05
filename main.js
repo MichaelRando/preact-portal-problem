@@ -28,9 +28,7 @@ class Main extends React.Component {
           onClick={this.handleClick}>
           Sign In
         </button>
-        {this.state.showSignIn && (
-          <SignIn close={this.close}/>
-        )}
+        <SignIn close={this.close} show={this.state.showSignIn}/>
       </div>
     )
   }

@@ -11,7 +11,8 @@ const Modal = ModalContent => class extends React.Component {
   render() {
     return (
       ReactDOM.createPortal(
-        (<ModalContent ref={(ref) => { this._portal = ref }} {...this.props}/>)
+        this.props.show &&
+        (<ModalContent {...this.props}/>)
         , dialogLayer)
     )
   }
