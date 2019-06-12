@@ -5,6 +5,7 @@ node_modules
 .idea/
 *.pyc
 *.iml
-bundle.js
+react-bundle.js
+preact-bundle.js
 bundle.css
 
